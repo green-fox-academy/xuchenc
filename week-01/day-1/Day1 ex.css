@@ -1,0 +1,138 @@
+#ex1{
+    background-color:rgb(14,145,161);
+    width:300px;
+    height:100px;
+    border:5px; 
+    border:solid;
+    border-color:rgb(125, 206, 148);
+    margin:10px;
+    font-size: 36px;
+}
+
+#ex2{
+    border:20px solid blue;
+    width:300px;
+    height:536px;
+    margin:10px;
+}
+#one{
+    background-color:rgb(230,118,118);
+    text-align: center;
+    font-size: 36px;
+    color:white;
+    margin-top: 0px;
+    padding:10px;
+}
+#two{
+    background-color:rgb(242,240,98);
+    text-align: center;
+    font-size: 36px;
+    color:white;
+    padding:10px;
+}
+#three{
+    background-color:rgb(169,230,230);
+    text-align: center;
+    font-size: 36px;
+    color:white;
+    padding:10px;
+}
+#four{
+    background-color:rgb(118,146,228);
+    text-align: center;
+    font-size: 36px;
+    color:white;
+    padding:10px;
+}
+#ex3{
+    width:300px;
+    border:10px solid blue;
+    margin:10px;
+}
+#five{
+    background-color:rgb(230,118,118);
+    color:white;
+    text-align: center;
+    padding:15px;
+    font-size: 36px;
+    
+}
+#six{
+    background-color:rgb(169,230,230);
+    color:white;
+    text-align: center;
+    padding:15px;
+    font-size: 36px;
+}
+
+#apple{
+    color:red;
+}
+
+ul#food>li{
+   color:blue;
+}
+h1{
+    color:blue;
+}
+h2{
+    color:gold;
+}
+
+#ex6{
+    border-left: 3px solid;
+    padding:5px;
+    font-size: 18px;
+}
+
+#b325{
+    border:1px solid green;
+    font-weight: bold;
+}
+.asteroid.b326{
+    border:1px solid green;
+    font-weight: bold;
+}
+
+p.asteroid.big{
+    background-color: yellow;
+    color:blue;
+}
+.asteroid.b329.big{
+    color:blue;
+    font-weight:bold;
+}
+
+
+#border1{
+    border:3px solid blue;
+    height: 75px;
+    width: 700px;
+    padding:10px;
+    margin:10px;
+}
+#square1{
+    width:50px;
+    height:50px;
+    background-color: blue;
+    margin:10px;
+    float: left;
+}
+
+#border2{
+    border:3px solid blue;
+    height: 75px;
+    width: 700px;
+    padding:10px;
+    background-color: orange;
+    margin:10px;
+    
+}
+#square2{
+    width:50px;
+    height:50px;
+    background-color:purple;
+    margin:10px;
+    float: left;
+}
+
