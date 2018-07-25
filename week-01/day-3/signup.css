@@ -1,0 +1,89 @@
+form{
+    border:60px solid lightgray;
+
+}
+
+input{
+    margin-left:50px;
+    display: block;
+    padding:20px;
+}
+
+h1{
+    margin-left:50px;
+    font-weight: normal;
+}
+
+.username{
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    margin-bottom: 20px;
+    border-color: green;
+}
+
+.email{
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    margin-bottom: 20px;
+}
+
+.password{
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background-color:lightgreen;
+    color:white;
+    font-size: 18px;
+    border:0px;
+    margin-top:40px;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.or{
+    background-color: lightgray;
+    border-radius: 50px;
+    border:0px;
+    margin-top:200px;
+}
+
+.facebook{
+    background-color: blue;
+    color: white;
+    margin-bottom:30px;
+    border:0px;
+    width:200px;
+    height:50px;
+    border-radius: 30px;
+    margin-top:120px;
+}
+.twitter{
+    background-color:lightblue;
+    color: white;
+    margin-bottom:30px;
+    border:0px;
+    width:200px;
+    height:50px;
+    border-radius: 30px;
+}
+.google{
+    background-color:orangered;
+    color: white;
+    margin-bottom:30px;
+    border:0px;
+    width:200px;
+    height:50px;
+    border-radius: 30px;
+}
+
+.column{
+    float: left;
+    width:33%;
+}
+

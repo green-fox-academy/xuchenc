@@ -1,0 +1,29 @@
+table{
+    border:30px solid blue;
+    border-spacing: 0px;
+    width: 500px;
+    height:500px;
+    font-size:18px;
+}
+
+th{
+    border:0.1px solid gray;
+    background-color: black;
+    color:white;
+    padding:10px;
+    font-weight: normal;
+    text-align: left;
+}
+
+td{
+    border:0.1px solid gray;
+    padding:10px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+tbody tr:nth-child(even){
+    background-color: blanchedalmond;
+}
