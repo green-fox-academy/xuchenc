@@ -1,0 +1,98 @@
+/* .outer {
+  justify-content: center;
+  margin: 0 auto;
+  width: 1080px;
+  height: 1080px;
+  border: 2px solid black;
+  border-radius: 30px;
+} */
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; */
+/* } */
+
+/*  */
+/*
+.outer {
+  margin: 0 auto;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  background: plum;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+}
+
+.button {
+  display: flex;
+  background: aqua;
+  width: 50px;
+  height: 25px;
+  margin: 10px;
+}
+
+.one {
+  max-width: 100px;
+  flex-grow: 0;
+}
+
+.two {
+  max-width: 100px;
+  flex-grow: 1;
+}
+
+.three {
+  max-width: 100px;
+  flex-grow: 0;
+}
+
+.four {
+  max-width: 100px;
+  flex-grow: 0;
+}
+
+.container2 {
+  width: 960px;
+  height: 860px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  /* margin-left: 150px; */
+  padding-top: 50px;
+}
+
+.yellow {
+  background: lightsalmon;
+  width: 66.7%;
+  height: 860px;
+  order: 1;
+}
+
+.green {
+  background: lightgreen;
+  width: 33.3%;
+  height: 860px;
+  margin-right: 10px;
+}
+
+.container3 {
+  background: lightgray;
+  width: 960px;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  /* margin-left: 170px; */
+}
