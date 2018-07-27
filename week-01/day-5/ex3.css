@@ -1,0 +1,39 @@
+.container {
+  background: lightblue;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="submit"] {
+  border-radius: 20px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  margin: 20px;
+}
+
+.blue {
+  box-shadow: 5px rgb(38,57,109);
+  background: rgb(59,88,151);
+}
+
+.red {
+  box-shadow: 5px rgb(134,43,47);
+  background: rgb(209,63,47);
+}
+
+.green {
+  box-shadow: 5px rgb(22,106,64);
+  background: rgb(23,163,80);
+}
+
+input[type="submit"]:hover {
+  filter: brightness(150%);
+}
+
+input[type="submit"]:active {
+  filter: brightness(50%);
+}
+

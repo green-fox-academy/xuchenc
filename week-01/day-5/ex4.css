@@ -1,0 +1,69 @@
+.container0 {
+  background: rgb(49,56,65);
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: absolute;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+i [class="fas fa-trash-alt"] {
+  z-index: 1;
+}
+
+i [class="fas fa-check"] {
+  z-index: 0;
+}
+
+/* .container2 {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+label {
+  /* visibility: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.delete {
+  background: rgb(243,69,65);
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+.sure {
+  background: rgb(56,186,125);
+  color: white;
+  width: 100px;
+  height: 50px;
+}
+
+button:hover + .delete {
+  visibility: visible;
+}
