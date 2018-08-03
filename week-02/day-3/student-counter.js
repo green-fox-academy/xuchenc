@@ -16,6 +16,7 @@ const students = [
 for(let i = 0; i < students.length; i++){
 console.log('name: ' + students[i].name,'candies: ' + students[i].candies);
 }
+
 var sum = 0;
 for(let j = 0; j < students.length; j++){
   if(students[j].candies<5){
