@@ -1,0 +1,64 @@
+<!-- Create a simple HTML document with one button.
+
+If the user clicks the button 3 times, and 5 seconds is already elapsed since the page is loaded,
+a text should appear under the button:
+
+5 seconds elapsed and clicked 3 times
+
+If the user starts clicking before the first 5 seconds, nothing should be printed -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+  <button class="abc">Click me</button>
+  <h1></h1>
+
+  <script>
+    'use strict';
+    var button = document.querySelector('.abc');
+    var text = document.getElementsByTagName('h1')[0];
+    var count = 0;
+
+    // var afterload = (new Date()).getTime();
+
+    // function getPageLoadTime(){
+    //     //calculate the current time in afterload
+    //     var clickload = (addEventListener()).getTime();
+    //     // now use the beforeload and afterload to calculate the seconds
+    //     var seconds = (clickload-afterload) / 1000;
+    //     // Place the seconds in the innerHTML to show the results
+    //     console.log(seconds);
+    // }
+        // window.onload = getPageLoadTime;
+
+      // window.addEventListener('load', function(){
+      //   console.log("");
+      // })
+
+      var startDate = new Date().getTime();
+      var endDate = new Date().getTime();
+      console.log(startDate);
+      console.log(endDate);
+      window.onload = function(){
+        console.log('loaded');
+
+      }
+
+
+
+      button.addEventListener('click', function(e){
+        count++;
+        console.log(e);
+
+        console.log(count);
+        if(count == 3){
+        text.textContent = '5 seconds elapsed and clicked 3 times';
+      }
+    })
+  </script>
+
+</body>
+</html>

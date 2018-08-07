@@ -49,17 +49,40 @@
               section.appendChild(box);
             }
             var number = document.querySelectorAll('div');
-            console.log(number);
+            console.log(parseInt(number[1].textContent));
 
-            for (let i = 0; i < number.length; i++) {
-              for(let j = 2; j < number[i]; j++) {
-                if(number[i] % j === 0) {
-                  number[i].setAttribute('class', 'not-prime');
-                }else{
-                  number[i].className = 'prime';
-                }
-              }
+            // for (let i = 2; i < number.length; i++) {
+            //   for (let j = 2; j < parseInt(number[i].textContent); j++) {
+            //     if(number[i] % j === 0) {
+            //       number[i].className = 'not-prime';
+            //     }else{
+            //       number[i].className = 'prime';
+            //     }
+            //   }
+            // }
+            // number[0].className = 'not-prime';
+            // number[1].className = 'prime';
+
+              function isPrime(){
+              if(i == 2){
+                console.log(i + 'prime');
+                ;
+              }else if(i % 2 == 0){  //排除偶数
+                console.log(i + 'not-prime');
+                ;
             }
+                //依次判断是否能被奇数整除，最大循环为数值的开方
+              var squareRoot = Math.sqrt(i);
+              //因为2已经验证过，所以从3开始；且已经排除偶数，所以每次加2
+                  for(var j = 3; j <= squareRoot; j += 2) {
+                    if (i % j  === 0) {
+                    console.log(j + 'not-prime');
+
+                    }
+                  }
+                  console.log(j + 'prime');
+                  ;
+
 
 
 

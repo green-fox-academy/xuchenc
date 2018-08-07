@@ -1,0 +1,27 @@
+<!-- Create a simple HTML document with one button.
+If the user clicks the button it should wait 2 seconds and
+it should show a text under the button: 2 seconds ellapsed -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+  <button class="abc">Click me</button>
+  <h1></h1>
+  <script>
+    'use strict';
+    var button = document.querySelector('.abc');
+    var text = document.getElementsByTagName('h1')[0];
+    console.log(text);
+
+
+      button.addEventListener('click', function(){
+      setTimeout(() =>{
+      text.textContent = '2 seconds ellapsed';
+      }, 2000)
+    })
+  </script>
+</body>
+</html>
