@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dispatch event</title>
+</head>
+<body>
+  <!--
+    The rendered div will change its content if the user clicks on it.
+    Lets be tricky and invoke its event listener by clicking on the button.
+     - You can extend the script below, but do not change the existing one
+     - Do not change the html neither
+     - When the button has been clicked invoke somehow the div-s click event listener.
+   -->
+  <button>Fire event on the div</button>
+  <div>Event is not fired yet</div>
+
+  <script type="text/javascript">
+
+  var text  = document.querySelector('div');
+    document.querySelector('div').addEventListener('click', (event) => {
+      event.target.innerText = 'Yeah, click event is fired!';
+    });
+
+
+    var button  = document.querySelector('button');
+    button.addEventListener('click', function(){
+      text.innerText = 'Click event is fired!!!!!!';
+    })
+
+    // text.addEventListener('click', function(){
+    //   if(text.innerText == 'Event is not fired yet'){
+    //   text.innerText = 'Event is not fired yet';
+    //   }
+    // })
+
+
+  </script>
+</body>
+</html>

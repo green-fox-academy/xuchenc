@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="star wars.css">
+</head>
+<body>
+
+  <h1>Enter character name</h1> <br>
+  <input type="text" id = "input">
+  <button type="button" name="search">search</button>
+  <ul>
+
+  </ul>
+  <ul id="film">
+
+  </ul>
+
+  <script>
+      'use strict';
+      const httpRequest = new XMLHttpRequest();
+      const input = document.getElementById('input');
+      const api = 'https://swapi.co/api/people/';
+      const button = document.querySelector('button');
+        button.addEventListener('click', function(){
+        const url1  = api + input.value;
+        httpRequest.open('GET', url1);
+        httpRequest.onload = () => {
+          const list = document.querySelector('ul');
+          const responseObject = JSON.parse(httpRequest.response);
+          console.log(responseObject);
+
+            for(let i = 0; i < Object.keys(responseObject).length; i++) {
+            const info = document.createElement('li');
+            const button2 = document.querySelector('li');
+            info.innerHTML =  Object.keys(responseObject)[i] + ': ' + Object.values(responseObject)[i];
+            list.appendChild(info);
+            // button2.addEventListener('click', function(){
+            //   const list2 = document.getElementById('film');
+            //   const film2 = responseObject.films;
+            //   lists.appendChild(film2);
+            // })
+            }
+
+          }
+          httpRequest.send()
+
+        })
+
+    </script>
+
+
+</body>
+</html>

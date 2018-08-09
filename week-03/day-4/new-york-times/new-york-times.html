@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>API</title>
+</head>
+<body>
+
+    <ul>
+
+    </ul>
+    <ul id="film">
+
+    </ul>
+    <script>
+      'use strict';
+
+      const httpRequest = new XMLHttpRequest();
+      httpRequest.open('GET', 'https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b72abdd391454b1dbfe191fc7151ccf6');
+      httpRequest.onload = () => {
+         for (let i = 0; i < 6; i++) {
+        const list = document.querySelector('ul');
+        const responseObject = JSON.parse(httpRequest.response);
+
+        const headline = document.createElement('li');
+        headline.innerHTML = '<h1>' + responseObject.response.docs[i].headline.main + '</h1>';
+        list.appendChild(headline);
+
+        const snippet = document.createElement('li');
+        snippet.innerHTML = responseObject.response.docs[i].snippet;
+        list.appendChild(snippet);
+
+        const pub_date = document.createElement('li');
+        pub_date.innerHTML = responseObject.response.docs[i].pub_date;
+        list.appendChild(pub_date);
+
+        const a = document.createElement('a');
+        a.setAttribute('href', responseObject.response.docs[i].web_url);
+        a.innerText = 'jump to the article';
+        list.appendChild(a);
+        }
+      }
+      httpRequest.send();
+    </script>
+</body>
+</html>
+
