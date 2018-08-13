@@ -33,7 +33,7 @@ const car = {
 const station = {
   petrolStorage: 3000,
   provide: function(car){
-    const addPetrol = station.provide.bind(car);
+    const addPetrol = station.provide.bind();
     addPetrol(3000);
     this.petrolStorage -= car.refill(this.petrolCapacit);
   }
