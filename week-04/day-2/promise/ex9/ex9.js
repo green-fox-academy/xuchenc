@@ -11,8 +11,4 @@ function parsePromised(){
   promise
   .then(result => console.log(result))
   .catch(err =>new Error('its an error'))
-
 }
-
-
-
