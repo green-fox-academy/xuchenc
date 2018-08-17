@@ -16,5 +16,4 @@ const ex3 = new Example2();
 Example2.prototype.value = 6;
 // ex3.__proto__.value = 7;
 console.log(ex3.value);
-console.log(ex3);
 
