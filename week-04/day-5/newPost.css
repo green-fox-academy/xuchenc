@@ -1,0 +1,59 @@
+body {
+  background: lightgray;
+}
+
+.container {
+  margin-top: 20px;
+  width: 600px;
+  height: 200px;
+  background: white;
+  border: 1px solid lightgray;
+}
+
+label, input, textarea {
+  margin-left: 20px;
+  display: block;
+}
+
+textarea {
+  width: 500px;
+  height: 30px;
+  background: lightgray;
+}
+
+label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input {
+  width: 500px;
+  height: 30px;
+  background: lightgray;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  background: lightblue;
+  margin-top: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+}
+
+.space {
+  height: 50px;
+  width: 300px;
+  z-index: 1;
+  position: absolute;
+}
