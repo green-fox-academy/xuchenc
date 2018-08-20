@@ -36,7 +36,7 @@ submitButton.addEventListener('click', () => {
   httpRequest2.open('POST', 'https://mellow-sugar.glitch.me/text');
   httpRequest2.setRequestHeader('Content-Type', 'application/json');
   httpRequest2.onload = () => {
-    if (newText === object.text) {
+    if (newText === object.text && object.id !== '') {
       para.innerText = 'OK';
     } else if (newText !== object.text) {
       para.innerText = 'Wrong';
@@ -45,5 +45,5 @@ submitButton.addEventListener('click', () => {
       para.innerText = 'Wrong';
     }
   };
-  httpRequest2.send();
+  httpRequest2.send(JSON.stringify(object));
 });
